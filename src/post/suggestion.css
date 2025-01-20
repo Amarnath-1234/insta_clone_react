@@ -1,0 +1,61 @@
+.suggestions{
+    padding: 0 1.5rem;
+    margin: 2.5rem 0 0 2rem;
+    font-family: sans-serif;
+}
+.s_head{
+    margin-bottom: 25px;
+}
+.profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-size: cover;
+}
+.suggestion_title{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.left_title{
+    color: gray;
+}
+.see_all{
+    font-weight: bold;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.suggestion_user{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.user_left{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.userinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.user{
+    font-weight: bold;
+    font-size: 14px;
+}
+.relation{
+    color: gray;
+    font-size: 12px;
+}
+.follow{
+    color: #0095f7;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1024px){
+    
+}

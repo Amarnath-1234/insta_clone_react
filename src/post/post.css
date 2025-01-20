@@ -1,0 +1,124 @@
+.post{
+    display: flex;
+    font-family: sans-serif;
+}
+.post_left{
+    margin: 1rem 0;
+    width: 62%;
+}
+.post_right{
+    width: 38%;
+}
+
+.top_story{
+    width: 100%;
+    height: 100px;
+    overflow: auto;
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem;
+    align-items: center;
+}
+.top_story::-webkit-scrollbar {
+    display: none;
+  }
+.story_post{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.f_name{
+    font-size: 12px;
+}
+.f_profile{
+    width: 60px;
+    height: 60px;
+    box-shadow: -2px -2px 0  #c28b24,2px 2px 0 #e02a2a,2px -2px 0 #e21bc1,-2px 2px 0 #c1c11f;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-size: contain;
+    background-position: top;
+}
+.post_head{
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid #807e7e9a;
+}
+.top_bot{
+    display: none;
+    width: 100%;
+    height: 55px;
+}
+.post_foot{
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #807e7e9a;
+}
+
+
+@media screen and (max-width:1024px){
+    .post_left{
+        margin: 1.2rem auto;
+        width: 60%;
+    }
+    .post_right{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .post_left{
+        margin: 1rem auto;
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:426px){
+    .post_left{
+        width: 100%;
+    }
+    .top_story{
+        margin-top: 3rem;
+    }
+    .top_bot{
+        display: block;
+    }
+    .post_head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+    .post_head>input{
+        padding: 10px;
+        border: none;
+        background-color: #363535;
+        border-radius: 5px;
+    }
+    .post_head>input::placeholder{
+        color: #cac1c1;
+    }
+    .head_logo_top{
+        width: 100px;
+    }
+    ._btn{
+        width: 100px;
+    }
+    .post_foot{
+        display: flex;
+    }
+    ._profile>img{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width:376px){
+    .post_head>img{
+        display: none;
+    }
+}

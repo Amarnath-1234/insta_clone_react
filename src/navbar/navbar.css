@@ -1,0 +1,113 @@
+.navbar{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+}
+.navbar_logo{
+    width: 110px;
+    margin: 40px 0 35px 25px ;
+}
+.insta_logo{
+    display: none;
+}
+.nav_buttons{
+    display: flex;
+    flex-direction: column;
+}
+.nav_btn{
+    display: flex;
+    align-items: center;
+    color: white;
+    background:0;
+    border: 0;
+    margin: 5px 10px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+.nav_btn:hover{
+    background-color: #76717188;
+    cursor: pointer;
+    font-weight: bold;
+}
+.nav_btn:hover span {
+    background:none;
+}
+.nav_btn>.icon{
+    font-size: 1.7rem;
+}
+.nav_btn:hover .icon {
+    background:none;
+}
+.nav_btn span{
+    font-size: 1rem;
+    margin-left: 15px;
+}
+.msg_btn{
+    position: relative;
+}
+.msg_btn>sup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 3px;
+    left: 23px;
+    width: 1.2rem;
+    height: 1.2rem;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+}
+.nav_btn>.navprofile{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-image: url(./images/profile.jpg);
+    background-size: cover;
+}
+.nav_more{
+    width: 13.2%;
+    position: fixed;
+    bottom: 20px;
+}
+
+
+@media screen and (max-width:1024px) {
+    .n_logo{
+        display: none;
+    }
+    .insta_logo{
+        margin: 3rem 1.3rem;
+        display: block;
+    }
+    .nav_btn{
+        padding: 6px 10px;
+        width: 73%;
+    }
+    .nav_btn>span{
+        display: none;
+    }
+    .nav_more{
+        display: none;
+    }
+    .navbtn>.navprofile{
+        width: 60px;
+        border: 2px solid greenyellow;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navbar{
+        width: 10%;
+        border-right: 1px solid gray;
+    }
+    .nav_btn{
+        width: 65%;
+    }
+}

@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.homepage{
+    display: flex;
+}
+.home_navbar{
+    width: 20%;
+    border-right: 1px solid #808080a3;
+}
+.home_post{
+    width: 80%;
+}
+
+@media screen and (max-width:1024px) {
+    .home_navbar{
+        width: 8%;
+        border-right: 1px solid #808080a3;
+    } 
+    .home_post{
+        width: 92%;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .home_navbar{
+        display: none;
+    } 
+    .home_post{
+        width: 100%;
+    }
+}

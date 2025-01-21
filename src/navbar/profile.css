@@ -267,7 +267,7 @@
 
 @media screen and (max-width:320px){
     .post_photo>.p_post{
-        height: 120px;
+        height: 105px;
         margin-top: 5px;
     }
 }

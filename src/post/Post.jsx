@@ -21,6 +21,7 @@ import ExploreIcon from '@mui/icons-material/Explore';
 import SlideshowIcon from '@mui/icons-material/Slideshow';
 import ChatIcon from '@mui/icons-material/Chat';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
+import { Link } from 'react-router-dom'
 
 function Post() {
     const [post, setPost] = useState([
@@ -170,13 +171,14 @@ function Post() {
             <AddCircleOutlineIcon className='icon'/>
         </button>
         <button className="_btn">
-            <span className='_profile'><img src={image} alt="" /></span>
+            <Link to='./profile'><span className='_profile'><img src={image} alt="" /></span></Link>
         </button>
         </div>
       </div>
       <div className="post_right">
         <Suggestion/>
       </div>
+      
     </div>
   )
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import './homepage.css'
 import Navbar from './navbar/Navbar'
 import Post from './post/Post'
+import { Outlet } from 'react-router-dom'
 
 function Homepage() {
   return (
@@ -10,8 +11,10 @@ function Homepage() {
         <Navbar/>
       </div>
       <div className="home_post">
-        <Post/>
+        <Outlet/>
       </div>
+        
+      
     </div>
   )
 }

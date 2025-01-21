@@ -9,6 +9,7 @@ import ChatIcon from '@mui/icons-material/Chat';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -50,12 +51,16 @@ function Navbar() {
             <span>Create</span>
         </button>
       </div>
+
       <div className="nav_profile">
-      <button className="nav_btn">
+      <Link to='./profile' className='link_profile'>
+      <button className='nav_btn'>
             <p className='navprofile'></p>
             <span>Profile</span>
-        </button>
+      </button>
+      </Link>
       </div>
+      
       <div className="nav_more">
       <button className="nav_btn">
             <MenuIcon className='icon'/>

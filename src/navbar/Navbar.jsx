@@ -22,10 +22,10 @@ function Navbar() {
         
 
       <div className="nav_buttons">
-        <button className="nav_btn">
-            <HomeIcon className='icon'/>
+      <Link to='/'><button className="nav_btn">
+        <HomeIcon className='icon'/>
             <span>Home</span>
-        </button>
+        </button></Link>
         <button className="nav_btn">
             <SearchIcon className='icon'/>
             <span>Search</span>

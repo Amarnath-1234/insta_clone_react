@@ -103,7 +103,7 @@ function Post() {
         f_name:'anup'
       },
       {
-        storyimage: mantis,
+        storyimage: food,
         f_name:'aman_'
       },
       {
@@ -115,7 +115,7 @@ function Post() {
         f_name:'snigdha'
       },
       {
-        storyimage: art,
+        storyimage: motivation,
         f_name:'_sneha'
       },
     ]

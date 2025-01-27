@@ -6,21 +6,20 @@ import { Avatar } from '@mui/material'
 function Suggestion() {
     const suggest = [
         {
-            suggest_profile:'',
-            suggest_user:'ankur_mishra'
+            suggest_user:'vishal_singh'
         },
         {
-            suggest_profile:'',
             suggest_user:'rohan_24'
         },
         {
-            suggest_profile:'',
             suggest_user:'barun_01'
         },
         {
-            suggest_profile:'',
             suggest_user:'pandey_amit'
         },
+        {
+            suggest_user:'shankar_909'
+        }
     ]
   return (
     <div className='suggestions'>
@@ -43,15 +42,12 @@ function Suggestion() {
         <button className="see_all">See All</button>
       </div>
       
-      <div className="suggestion_username">
-        
-      </div>
 
        <div className="suggestion_username">
         {
             suggest.map((suggest)=>{
                 return (
-                    <div className="suggestion_user">
+            <div className="suggestion_user">
               <div className="user_left">
                 <span className="avatar">
                     <Avatar>{suggest.suggest_user.at(0).toUpperCase()}</Avatar>

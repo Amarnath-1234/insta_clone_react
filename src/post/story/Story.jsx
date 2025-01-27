@@ -5,10 +5,6 @@ import { BookmarkBorder, ChatBubbleOutline, FavoriteBorder, Telegram } from '@mu
 
 function Story({user, postimage, postvideo, profileimg, likes, timestamp}) {
 
-//   var vids =`$('video')`;
-//  $.each(vids,function(){
-//     this.controls = false;
-//   })
   return (
     <div className='story'>
       <div className="story_sec">

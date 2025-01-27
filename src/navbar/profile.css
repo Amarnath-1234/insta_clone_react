@@ -157,7 +157,10 @@
 .p_post>img{
     width: 100%;
 }
-
+.highlight_ img{
+    background-color: white;
+    background-size: contain;
+}
 
 @media screen and (max-width:1024px){
     .post_photo{

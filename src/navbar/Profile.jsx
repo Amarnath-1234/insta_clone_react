@@ -1,5 +1,7 @@
 import React from 'react'
 import './profile.css'
+import { FaPlus } from "react-icons/fa6";
+
 import image from '../navbar/images/profile.jpg'
 import highlight1 from '../navbar/images/highlight_1.jpg'
 import highlight2 from '../navbar/images/highlight_2.jpg'
@@ -9,6 +11,7 @@ import highlight5 from '../navbar/images/highlight_5.jpg'
 import highlight6 from '../navbar/images/highlight_6.jpg'
 import highlight7 from '../navbar/images/highlight_7.jpg'
 
+import plus1 from '../navbar/images/plus1.png'
 import post1 from '../navbar/images/post_1.jpg'
 import post2 from '../navbar/images/post_2.jpg'
 import post3 from '../navbar/images/post_3.jpg'
@@ -65,7 +68,7 @@ const highlights = [
         h_name:'Transformation'
       },
       {
-        highlight_image: post3,
+        highlight_image: plus1,
         h_name:'New'
       }
     ]
@@ -96,7 +99,7 @@ const highlights = [
         p_image: post7
       },
       {
-        p_image: post8
+        p_image: plus1
       },
     ]
 
